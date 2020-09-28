@@ -1,2 +1,2 @@
-# runcaria
+# Runcaria
 A game about plants
