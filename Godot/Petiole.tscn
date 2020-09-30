@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=2]
+
+[sub_resource type="CapsuleShape2D" id=1]
+
+[node name="Petiole" type="KinematicBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2( 0.1, 1.5 )
+shape = SubResource( 1 )
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+color = Color( 0.117647, 0.529412, 0.211765, 1 )
+polygon = PoolVector2Array( 0, -30, 0.8, -24, 1, 0, 0.8, 24, 0, 30, -0.8, 24, -1, 0, -0.8, -24 )

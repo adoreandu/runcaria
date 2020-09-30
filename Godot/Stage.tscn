@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Ground.tscn" type="PackedScene" id=1]
+[ext_resource path="res://StemSegment.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Leaf.tscn" type="PackedScene" id=3]
+[ext_resource path="res://RootSegment.tscn" type="PackedScene" id=4]
+
+[node name="Stage" type="Node2D"]
+
+[node name="Ground" parent="." instance=ExtResource( 1 )]
+z_index = -10
+
+[node name="StemSegment" parent="." instance=ExtResource( 2 )]
+position = Vector2( 510, 450 )
+
+[node name="RootSegment" parent="." instance=ExtResource( 4 )]
+position = Vector2( 510, 450 )
+
+[node name="Leaf" parent="." instance=ExtResource( 3 )]
+position = Vector2( 510, 390 )
+rotation = 0.785398
+z_index = -2
+
+[node name="Leaf2" parent="." instance=ExtResource( 3 )]
+position = Vector2( 510, 390 )
+rotation = -0.785398
+z_index = -2
